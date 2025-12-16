@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estação de Carregamento (OCPP)</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+
+    <div class="container">
+        <h1>Estação de Carregamento EV</h1>
+        
+        <div class="buttons">
+            <button id="startTransactionBtn" class="btn primary">Iniciar Transação</button>
+            <button id="stopTransactionBtn" class="btn danger" disabled>Parar Transação</button> 
+        </div>
+
+        <div id="statusCard" class="card">
+            <h3>Status da Transação</h3>
+            <p id="transactionInfo">Aguardando conexão...</p>
+        </div>
+
+        <div id="connectionStatus" class="tag info">Conectando ao Servidor...</div>
+    </div>
+
+    <script src="script.js"></script> </body>
+</html>
